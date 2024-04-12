@@ -23,5 +23,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('', include('about.urls')),
     path('',include('contact.urls')),
-     path('',include('resources.urls')),
+    path('',include('resources.urls')),
+    path('',include('blog.urls')),
 ]

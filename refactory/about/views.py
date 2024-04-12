@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
+from django.template import loader
 # Create your views here.
 def about(request):
-    return HttpResponse("Hello world,this is all about the refactory class for cohort 2024")
+    template = loader.get_template('about.html')
+    return HttpResponse(template.render())
